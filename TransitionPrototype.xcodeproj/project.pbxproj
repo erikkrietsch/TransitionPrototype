@@ -14,6 +14,9 @@
 		F078A0052058617C00261B61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F078A0032058617C00261B61 /* LaunchScreen.storyboard */; };
 		F078A0102058617C00261B61 /* TransitionPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F078A00F2058617C00261B61 /* TransitionPrototypeTests.swift */; };
 		F078A01B2058617C00261B61 /* TransitionPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F078A01A2058617C00261B61 /* TransitionPrototypeUITests.swift */; };
+		F0E08A2B23F5BDD00083AC9F /* SimpleTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E08A2A23F5BDD00083AC9F /* SimpleTransitionDelegate.swift */; };
+		F0E08A2D23F5E38F0083AC9F /* PacManTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E08A2C23F5E38F0083AC9F /* PacManTransitionDelegate.swift */; };
+		F0E08A2F23F730880083AC9F /* SparkleTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E08A2E23F730880083AC9F /* SparkleTransitionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F078A0162058617C00261B61 /* TransitionPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F078A01A2058617C00261B61 /* TransitionPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPrototypeUITests.swift; sourceTree = "<group>"; };
 		F078A01C2058617C00261B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E08A2A23F5BDD00083AC9F /* SimpleTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionDelegate.swift; sourceTree = "<group>"; };
+		F0E08A2C23F5E38F0083AC9F /* PacManTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacManTransitionDelegate.swift; sourceTree = "<group>"; };
+		F0E08A2E23F730880083AC9F /* SparkleTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkleTransitionDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				F078A0012058617C00261B61 /* Assets.xcassets */,
 				F078A0032058617C00261B61 /* LaunchScreen.storyboard */,
 				F078A0062058617C00261B61 /* Info.plist */,
+				F0E08A2A23F5BDD00083AC9F /* SimpleTransitionDelegate.swift */,
+				F0E08A2C23F5E38F0083AC9F /* PacManTransitionDelegate.swift */,
+				F0E08A2E23F730880083AC9F /* SparkleTransitionDelegate.swift */,
 			);
 			path = TransitionPrototype;
 			sourceTree = "<group>";
@@ -188,7 +197,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Totally Radical Software, Inc.";
 				TargetAttributes = {
 					F0789FF62058617B00261B61 = {
@@ -197,11 +206,13 @@
 					};
 					F078A00A2058617C00261B61 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F0789FF62058617B00261B61;
 					};
 					F078A0152058617C00261B61 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F0789FF62058617B00261B61;
 					};
@@ -261,6 +272,9 @@
 			files = (
 				F0789FFD2058617B00261B61 /* ViewController.swift in Sources */,
 				F0789FFB2058617B00261B61 /* AppDelegate.swift in Sources */,
+				F0E08A2B23F5BDD00083AC9F /* SimpleTransitionDelegate.swift in Sources */,
+				F0E08A2D23F5E38F0083AC9F /* PacManTransitionDelegate.swift in Sources */,
+				F0E08A2F23F730880083AC9F /* SparkleTransitionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +343,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -336,6 +351,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -386,6 +402,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -393,6 +410,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -429,10 +447,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJV239Q4EG;
 				INFOPLIST_FILE = TransitionPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.totesrad.TransitionPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -444,10 +463,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJV239Q4EG;
 				INFOPLIST_FILE = TransitionPrototype/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.totesrad.TransitionPrototype;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -460,10 +480,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJV239Q4EG;
 				INFOPLIST_FILE = TransitionPrototypeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.totesrad.TransitionPrototypeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransitionPrototype.app/TransitionPrototype";
 			};
@@ -477,10 +498,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJV239Q4EG;
 				INFOPLIST_FILE = TransitionPrototypeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.totesrad.TransitionPrototypeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransitionPrototype.app/TransitionPrototype";
 			};
@@ -496,7 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.totesrad.TransitionPrototypeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TransitionPrototype;
 			};
@@ -512,7 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.totesrad.TransitionPrototypeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TransitionPrototype;
 			};
